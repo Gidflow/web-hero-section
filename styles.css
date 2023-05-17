@@ -9,6 +9,7 @@
 body{
     color: #fff;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+   
 }
 
 .hero {
@@ -39,15 +40,20 @@ body{
   #menu-icon { font-size: 4vh; }
 .hero-title { font-size: 4vh; 
             text-align: center;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 8em; */
+            
+            color: rgb(255, 255, 255);
            }
-.button { font-size: 3vh; }
+
+           .button, .hero-title{
+            margin-bottom: 6em;
+           }
+
 a{
     text-decoration: none;
     color: #fff;
-}
-a:hover{
-    background-color: rgb(116, 71, 5);
 }
 
 .nav-bar{
@@ -55,9 +61,19 @@ a:hover{
 }
 
 .button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    
+    align-items: center;
+    font-size: 3vh;
+    background-color: rgb(255, 252, 252) ;
+    margin: 0 auto;
+    padding: .5em;
+    color: rgb(8, 8, 88);
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.nav-bar a:hover{
+  background-color: rgb(4, 7, 184);
 }
 
 @media (min-width:960px) {
@@ -87,10 +103,20 @@ a:hover{
 
     #logo { font-size: 5vh; }
 
-    .hero-title { font-size: 6vh; 
+    .hero-title { font-size: 8vh; 
         text-align: center;
         align-items: flex-start;
        }
+
+       .button{
+        
+        text-align: center;
+        font-size: 4vh;
+        font-weight: bold;
+       
+    }
+
+    
 
 }
 
